@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Swal from "sweetalert2";
 
-const MiddleBar = ({ open }: { open: () => void }) => {
+const NormalNavbar = ({ open }: { open: () => void }) => {
   const { push } = useRouter();
 
   const {
@@ -49,7 +49,7 @@ const MiddleBar = ({ open }: { open: () => void }) => {
 
   return (
     <div className="w-full">
-      <section className="bg-white hidden lg:flex w-full ">
+      <section className="bg-blue-600 hidden lg:flex w-full ">
         <div className="main-container w-full  bg-blue-600 flex flex-row gap-12 justify-between text-white">
           {/* -------------------------img div----------------------- */}
           <div className="-ml-2.5">
@@ -111,7 +111,7 @@ const MiddleBar = ({ open }: { open: () => void }) => {
           </div>
         </div>
       </section>
-      <div className="main-container -ml-2 bg-white shadow-sm border-t border-gray-400 text-2xl cursor-pointer lg:hidden  flex items-center justify-between text-[#211c55] py-2.5">
+      <div className="main-container -ml-2 bg-blue-600 shadow-sm border-t border-gray-400 text-2xl cursor-pointer lg:hidden  flex items-center justify-between text-[#211c55] py-2.5">
         <Link href="/">
           <h1 className="font-semibold text-lg py-3 ml-3">WORLDREF</h1>
         </Link>
@@ -123,7 +123,7 @@ const MiddleBar = ({ open }: { open: () => void }) => {
   );
 };
 
-export default MiddleBar;
+export default NormalNavbar;
 
 export const menusArray = [
   {

@@ -62,7 +62,7 @@ const ResponsiveNavbar = ({
     >
       <div className="w-full flex flex-col h-full py-2 md:py-4">
         <div className="flex flex-col gap-4 text-sm">
-          <div className="flex justify-between items-center w-full pb-2 md:pb-3 px-4 md:px-5 border-b border-primary/30">
+          <div className="flex justify-between items-center w-full  -mt-2 pb-1 -md:pt-2 px-4 md:px-5 border-b border-primary/30">
             <div className="flex flex-row gap-5">
               <Link href="/">
                 <h1 className="font-semibold text-lg py-5">WORLDREF</h1>

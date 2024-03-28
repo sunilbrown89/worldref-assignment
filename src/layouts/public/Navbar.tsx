@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
 import ResponsiveNavbar from "./ResponsiveNavbar";
-import { MiddleBar } from "@/components/leadpage/home";
+import NormalNavbar from "./NormalNavbar";
 
 const Navbar = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -15,7 +15,8 @@ const Navbar = () => {
     <nav
       className={`sticky top-0 z-[9000] transition-all duration-100 ease-in-out bg-white`}
     >
-      <MiddleBar open={() => setOpenDrawer(true)} />
+      {/* <MiddleBar open={() => setOpenDrawer(true)} /> */}
+      <NormalNavbar open={() => setOpenDrawer(true)} />
       <ResponsiveNavbar
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
