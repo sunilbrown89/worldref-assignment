@@ -45,9 +45,9 @@ export default function AdminLogin() {
   ) => {
     try {
       if (
-        values.name !== "sunil" ||
-        values.email !== "sunil@sahu.com" ||
-        values.password !== "sunil@sahu.com"
+        // values.name !== "sunil" ||
+        values.email !== "eve.holt@reqres.in" ||
+        values.password !== "cityslicka"
       ) {
         throw new Error("Invalid credentials!");
       }
@@ -79,10 +79,15 @@ export default function AdminLogin() {
           <img src="/login/login-bg.png" alt="" className="w-full h-full" />
         </div>
         <div className="flex flex-col py-8 px-1 md:p-6 w-full gap-4 md:gap-12 lg:gap-8">
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-3">
             <h1 className="text-theme-blue-dark text-2xl md:text-3xl font-semibold leading-4 md:leading-6">
               Welcome Back !
             </h1>
+            <div className="flex flex-col gap-0.5">
+              <p>REQRES credentials to get access !!!</p>
+              <p>Email: eve.holt@reqres.in</p>
+              <p>Password:cityslicka</p>
+            </div>
           </div>
           <div className="w-full flex flex-col items-center justify-center">
             <Formik
