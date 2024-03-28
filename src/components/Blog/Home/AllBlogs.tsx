@@ -52,7 +52,7 @@ const AllBlogs = () => {
             <Title
               text="Blogs"
               classNames="flex justify-center items-center "
-              mainTitle="All Blogs"
+              mainTitle="All Blogsss"
             />
           </div>
           {/*  ---------------------Ongoing 0------------------------------*/}
